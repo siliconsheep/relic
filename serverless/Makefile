@@ -2,7 +2,7 @@
 
 build:
 	dep ensure -v
-	env GOOS=linux go build -ldflags="-s -w" -o ./bin/relic_sign handlers/relic_sign.go
+	env GOOS=linux go build -ldflags="-s -w" -o ./bin/relic_sign handlers/*.go
 
 clean:
 	rm -rf ./bin ./vendor Gopkg.lock

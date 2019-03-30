@@ -21,8 +21,8 @@
 
 [[constraint]]
   name = "github.com/sassoftware/relic"
-  source = "github.com/siliconsheep/relic"
+  source = "https://github.com/siliconsheep/relic.git"
 
-[[constraint]]
+[[override]]
   name = "github.com/satori/go.uuid"
   version = "^1.0.0"

@@ -7,6 +7,9 @@ bin
 # golang vendor (dependencies) directory
 vendor
 
+# test files
+test
+
 # Binaries for programs and plugins
 *.exe
 *.exe~

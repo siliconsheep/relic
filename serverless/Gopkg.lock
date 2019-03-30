@@ -52,8 +52,6 @@
     "private/protocol/restxml",
     "private/protocol/xml/xmlutil",
     "service/s3",
-    "service/s3/s3iface",
-    "service/s3/s3manager",
     "service/sts",
   ]
   pruneopts = ""
@@ -61,11 +59,281 @@
   version = "v1.19.5"
 
 [[projects]]
+  digest = "1:b1f2b4b8773b94d2546774cea6b944518ea9b238c8962d66d3d6d8e2d0052900"
+  name = "github.com/beevik/etree"
+  packages = ["."]
+  pruneopts = ""
+  revision = "8aee6516be3b1163bb6450c35c50e4969e3a3aa8"
+  version = "v1.1.0"
+
+[[projects]]
+  branch = "master"
+  digest = "1:339bac0d398920a11fd7e8a7fbd4f133d4edd4faa1c2cbaba256d3684a266019"
+  name = "github.com/bradfitz/gomemcache"
+  packages = ["memcache"]
+  pruneopts = ""
+  revision = "bc664df9673713a0ccf26e3b55a673ec7301088b"
+
+[[projects]]
+  digest = "1:a0a137c32515be7033c09be792a79b20d8c69e1891bf3f797e8ba83ecbb4b1fe"
+  name = "github.com/danieljoos/wincred"
+  packages = ["."]
+  pruneopts = ""
+  revision = "412b574fb496839b312a75fba146bd32a89001cf"
+  version = "v1.0.1"
+
+[[projects]]
+  digest = "1:cc1255e2fef3819bfab3540277001e602892dd431ef9ab5499bcdbc425923d64"
+  name = "github.com/godbus/dbus"
+  packages = ["."]
+  pruneopts = ""
+  revision = "2ff6f7ffd60f0f2410b3105864bdd12c7894f844"
+  version = "v5.0.1"
+
+[[projects]]
+  branch = "master"
+  digest = "1:f81c8d7354cc0c6340f2f7a48724ee6c2b3db3e918ecd441c985b4d2d97dd3e7"
+  name = "github.com/howeyc/gopass"
+  packages = ["."]
+  pruneopts = ""
+  revision = "bf9dde6d0d2c004a008c27aaee91170c786f6db8"
+
+[[projects]]
+  digest = "1:870d441fe217b8e689d7949fef6e43efbc787e50f200cb1e70dbca9204a1d6be"
+  name = "github.com/inconshreveable/mousetrap"
+  packages = ["."]
+  pruneopts = ""
+  revision = "76626ae9c91c4f2a10f34cad8ce83ea42c93bb75"
+  version = "v1.0"
+
+[[projects]]
   digest = "1:13fe471d0ed891e8544eddfeeb0471fd3c9f2015609a1c000aefdedf52a19d40"
   name = "github.com/jmespath/go-jmespath"
   packages = ["."]
   pruneopts = ""
   revision = "c2b33e84"
+
+[[projects]]
+  digest = "1:3108ec0946181c60040ff51b811908f89d03e521e2b4ade5ef5c65b3c0e911ae"
+  name = "github.com/kr/pretty"
+  packages = ["."]
+  pruneopts = ""
+  revision = "73f6ac0b30a98e433b289500d779f50c1a6f0712"
+  version = "v0.1.0"
+
+[[projects]]
+  digest = "1:11b056b4421396ab14e384ab8ab8c2079b03f1e51aa5eb4d9b81f9e0d1aa8fbf"
+  name = "github.com/kr/text"
+  packages = ["."]
+  pruneopts = ""
+  revision = "e2ffdb16a802fe2bb95e2e35ff34f0e53aeef34f"
+  version = "v0.1.0"
+
+[[projects]]
+  branch = "master"
+  digest = "1:7df1d8dee35a525b58446215928a3484902197a8b40f23a77afe6efcdde526be"
+  name = "github.com/miekg/pkcs11"
+  packages = ["."]
+  pruneopts = ""
+  revision = "55f3fac3af27733d63d892fafed86102fb486162"
+
+[[projects]]
+  digest = "1:8e4f739f290a3d6f38b7b6d8f704be3fbff599f755e16745a1983f3e6e1b0b7e"
+  name = "github.com/op/go-logging"
+  packages = ["."]
+  pruneopts = ""
+  revision = "b2cb9fa56473e98db8caba80237377e83fe44db5"
+  version = "v1"
+
+[[projects]]
+  digest = "1:1d7e1867c49a6dd9856598ef7c3123604ea3daabf5b83f303ff457bcbc410b1d"
+  name = "github.com/pkg/errors"
+  packages = ["."]
+  pruneopts = ""
+  revision = "ba968bfe8b2f7e042a574c888954fccecfa385b4"
+  version = "v0.8.1"
+
+[[projects]]
+  branch = "master"
+  digest = "1:38de7dbd1f2e9ac2a76fef83e059f9efceadcc5e8d443f3a70382b47a76ec79c"
+  name = "github.com/qur/ar"
+  packages = ["."]
+  pruneopts = ""
+  revision = "282534b917707a0e6639276266fa6421c634af2d"
+
+[[projects]]
+  branch = "master"
+  digest = "1:65446e0199c03c9ca083e69734cbe0399707e6121da75af5a09e82609eb65b45"
+  name = "github.com/sassoftware/go-rpmutils"
+  packages = [
+    ".",
+    "cpio",
+    "fileutil",
+  ]
+  pruneopts = ""
+  revision = "8c470ded63c3eb27c1aa3e7b08142f70f811e693"
+
+[[projects]]
+  digest = "1:7ab8de0d68e6ef4329b050a724c8c0dc82941f0dc5726ae15ec28a2273ce5e08"
+  name = "github.com/sassoftware/relic"
+  packages = [
+    "cmdline/shared",
+    "config",
+    "lib/appmanifest",
+    "lib/assuan",
+    "lib/atomicfile",
+    "lib/audit",
+    "lib/authenticode",
+    "lib/binpatch",
+    "lib/cabfile",
+    "lib/certloader",
+    "lib/comdoc",
+    "lib/dlog",
+    "lib/magic",
+    "lib/passprompt",
+    "lib/pgptools",
+    "lib/pkcs7",
+    "lib/pkcs8",
+    "lib/pkcs9",
+    "lib/pkcs9/ratelimit",
+    "lib/pkcs9/timestampcache",
+    "lib/pkcs9/tsclient",
+    "lib/readercounter",
+    "lib/redblack",
+    "lib/signappx",
+    "lib/signdeb",
+    "lib/signjar",
+    "lib/signxap",
+    "lib/x509tools",
+    "lib/xmldsig",
+    "lib/zipslicer",
+    "signers",
+    "signers/apk",
+    "signers/appmanifest",
+    "signers/appx",
+    "signers/cab",
+    "signers/cat",
+    "signers/deb",
+    "signers/jar",
+    "signers/msi",
+    "signers/pecoff",
+    "signers/pgp",
+    "signers/pkcs",
+    "signers/ps",
+    "signers/rpm",
+    "signers/sigerrors",
+    "signers/starman",
+    "signers/vsix",
+    "signers/xap",
+    "signers/zipbased",
+    "token",
+    "token/filetoken",
+    "token/open",
+    "token/p11token",
+    "token/scdtoken",
+  ]
+  pruneopts = ""
+  revision = "e3222af72824f4cbaf652a42808fb309f22a93ff"
+  source = "https://github.com/siliconsheep/relic.git"
+  version = "v7.1.2"
+
+[[projects]]
+  digest = "1:7f569d906bdd20d906b606415b7d794f798f91a62fcfb6a4daa6d50690fb7a3f"
+  name = "github.com/satori/go.uuid"
+  packages = ["."]
+  pruneopts = ""
+  revision = "f58768cc1a7a7e77a3bd49e98cdd21419399b6a3"
+  version = "v1.2.0"
+
+[[projects]]
+  digest = "1:a1403cc8a94b8d7956ee5e9694badef0e7b051af289caad1cf668331e3ffa4f6"
+  name = "github.com/spf13/cobra"
+  packages = ["."]
+  pruneopts = ""
+  revision = "ef82de70bb3f60c65fb8eebacbb2d122ef517385"
+  version = "v0.0.3"
+
+[[projects]]
+  digest = "1:cbaf13cdbfef0e4734ed8a7504f57fe893d471d62a35b982bf6fb3f036449a66"
+  name = "github.com/spf13/pflag"
+  packages = ["."]
+  pruneopts = ""
+  revision = "298182f68c66c05229eb03ac171abe6e309ee79a"
+  version = "v1.0.3"
+
+[[projects]]
+  branch = "master"
+  digest = "1:274ef04976d4a46d7e1e473f9a3858c870b0a022b10aff8fced42017a6450372"
+  name = "github.com/streadway/amqp"
+  packages = ["."]
+  pruneopts = ""
+  revision = "14f78b41ce6da3d698c2ef2cc8c0ea7ce9e26688"
+
+[[projects]]
+  branch = "master"
+  digest = "1:5d5ea0c53c32b0465b910eb1d98b045c2f14c416880c54dd5356a1c6b4569041"
+  name = "github.com/xi2/xz"
+  packages = ["."]
+  pruneopts = ""
+  revision = "48954b6210f8d154cb5f8484d3a3e1f83489309e"
+
+[[projects]]
+  branch = "master"
+  digest = "1:a5e329cd01b9ca24476faebc2f6009047cca4455ba7ed9f4f6ccba71a378879f"
+  name = "github.com/zalando/go-keyring"
+  packages = [
+    ".",
+    "secret_service",
+  ]
+  pruneopts = ""
+  revision = "fbe81aec3a07e14c2f0a201288c909832ebaae4f"
+
+[[projects]]
+  branch = "master"
+  digest = "1:36ef1d8645934b1744cc7d8726e00d3dd9d8d84c18617bf7367a3a6d532f3370"
+  name = "golang.org/x/crypto"
+  packages = [
+    "cast5",
+    "openpgp",
+    "openpgp/armor",
+    "openpgp/clearsign",
+    "openpgp/elgamal",
+    "openpgp/errors",
+    "openpgp/packet",
+    "openpgp/s2k",
+    "pkcs12",
+    "pkcs12/internal/rc2",
+    "ssh/terminal",
+  ]
+  pruneopts = ""
+  revision = "a5d413f7728c81fb97d96a2b722368945f651e78"
+
+[[projects]]
+  branch = "master"
+  digest = "1:1b0de777d8ddd63356d5a4d76799ea8f47e811aa9dda85ddc72b2a061c799cc9"
+  name = "golang.org/x/sys"
+  packages = [
+    "unix",
+    "windows",
+  ]
+  pruneopts = ""
+  revision = "9eb1bfa1ce65ae8a6ff3114b0aaf9a41a6cf3560"
+
+[[projects]]
+  branch = "master"
+  digest = "1:9522af4be529c108010f95b05f1022cb872f2b9ff8b101080f554245673466e1"
+  name = "golang.org/x/time"
+  packages = ["rate"]
+  pruneopts = ""
+  revision = "9d24e82272b4f38b78bc8cff74fa936d31ccd8ef"
+
+[[projects]]
+  digest = "1:cedccf16b71e86db87a24f8d4c70b0a855872eb967cb906a66b95de56aefbd0d"
+  name = "gopkg.in/yaml.v2"
+  packages = ["."]
+  pruneopts = ""
+  revision = "51d6538a90f86fe93ac480b35f37b2be17fef232"
+  version = "v2.2.2"
 
 [solve-meta]
   analyzer-name = "dep"
@@ -76,7 +344,32 @@
     "github.com/aws/aws-sdk-go/aws",
     "github.com/aws/aws-sdk-go/aws/session",
     "github.com/aws/aws-sdk-go/service/s3",
-    "github.com/aws/aws-sdk-go/service/s3/s3manager",
+    "github.com/sassoftware/relic/config",
+    "github.com/sassoftware/relic/lib/audit",
+    "github.com/sassoftware/relic/lib/certloader",
+    "github.com/sassoftware/relic/lib/passprompt",
+    "github.com/sassoftware/relic/lib/pkcs9",
+    "github.com/sassoftware/relic/lib/pkcs9/tsclient",
+    "github.com/sassoftware/relic/signers",
+    "github.com/sassoftware/relic/signers/apk",
+    "github.com/sassoftware/relic/signers/appmanifest",
+    "github.com/sassoftware/relic/signers/appx",
+    "github.com/sassoftware/relic/signers/cab",
+    "github.com/sassoftware/relic/signers/cat",
+    "github.com/sassoftware/relic/signers/deb",
+    "github.com/sassoftware/relic/signers/jar",
+    "github.com/sassoftware/relic/signers/msi",
+    "github.com/sassoftware/relic/signers/pecoff",
+    "github.com/sassoftware/relic/signers/pgp",
+    "github.com/sassoftware/relic/signers/pkcs",
+    "github.com/sassoftware/relic/signers/ps",
+    "github.com/sassoftware/relic/signers/rpm",
+    "github.com/sassoftware/relic/signers/sigerrors",
+    "github.com/sassoftware/relic/signers/starman",
+    "github.com/sassoftware/relic/signers/vsix",
+    "github.com/sassoftware/relic/signers/xap",
+    "github.com/sassoftware/relic/token",
+    "github.com/sassoftware/relic/token/open",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
